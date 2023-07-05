@@ -3,7 +3,18 @@ import PropTypes from 'prop-types';
 import './button.css';
 
 /**
- * Primary UI component for user interaction
+ * 
+ *<br><br><br>
+ * <h2 style="border:0">Step 1: Install the Design System </h2>
+ * Visit <a href="https://www.npmjs.com/package/dribbble-design-system-gc?activeTab=versions">npmjs.com</a> to install <code>dribbble-design-system-gc</code> in your React app and follow the instructions.
+ *<br><br>
+ <h2 style="border:0">Step 2: Import the Button component</h2>
+ * Add <code>import { Button } from "dribbble-design-system-gc";</code> into the page you want to use the Button component.
+<br><br><h2 style="border:0">Step 3: Render the Button component</h2>
+ * Embed your component on the page <code>Button type="" text=""</code>.
+ * <br><br><h2 style="border:0">Step 4: Customise the Button component</h2>
+ * Choose between the type Primary and Secondary and add the value into the text prop. Test the different states below if you're not sure which one works for you. 
+<br><br>
  */
 export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
